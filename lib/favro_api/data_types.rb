@@ -8,6 +8,12 @@ module FavroApi
       end
     end
 
+    class Hash < ::Hash
+      def self.new(value)
+        value.to_h
+      end
+    end
+
     class String < ::String
       def self.new(value = '')
         value.to_s
@@ -48,6 +54,12 @@ module FavroApi
   end
 end
 
+require_relative './data_types/shared_to_user'
 require_relative './data_types/custom_field'
 require_relative './data_types/assignment'
 require_relative './data_types/card'
+require_relative './data_types/column'
+require_relative './data_types/tag'
+require_relative './data_types/widget'
+require_relative './data_types/organization'
+require_relative './data_types/user'

@@ -5,6 +5,8 @@ module FavroApi
       extend Parser
 
       field :customFieldId, String
+      field :total, Integer
+      field :reports, Hash
     end
   end
 end
