@@ -5,7 +5,7 @@ cache:
   - apt
 rvm:
   - 2.3.1
-bundler_args: --without development production --quiet --jobs=3 --retry=3
+bundler_args: --quiet --jobs=3 --retry=3
 before_install: gem install bundler -v 1.13.5
 script:
   - RAILS_ENV=test bundle exec rspec spec
