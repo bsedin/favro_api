@@ -8,8 +8,8 @@ describe FavroApi do
   it "should receive and remember auth params" do
     params = { email: 'ololo@lolo.lo', token: 'ololololo' }
 
-    subject.auth(params)
-    expect(subject.auth_email).to eq(params[:email])
-    expect(subject.auth_token).to eq(params[:token])
+    subject.auth = (params)
+    expect(subject.auth.email).to eq(params[:email])
+    expect(subject.auth.token).to eq(params[:token])
   end
 end
