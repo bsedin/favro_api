@@ -1,8 +1,8 @@
+require_relative './base'
+
 module FavroApi
   module DataTypes
-    class Tag
-      extend Fields
-      extend Parser
+    class Tag < ComplexType
 
       field :tagId,           String
       field :organizationId,  String

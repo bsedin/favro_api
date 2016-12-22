@@ -1,8 +1,8 @@
+require_relative './base'
+
 module FavroApi
   module DataTypes
-    class Widget
-      extend Fields
-      extend Parser
+    class Widget < ComplexType
 
       field :widgetCommonId,         String
       field :organizationId,         String

@@ -2,12 +2,14 @@ require_relative './base'
 
 module FavroApi
   module DataTypes
-    class Column < ComplexType
+    class Task < ComplexType
 
-      field :columnId,        String
+      field :taskId,          String
+      field :taskListId,      String
+      field :cardCommonId,    String
       field :organizationId,  String
-      field :widgetCommonId,  String
       field :name,            String
+      field :completed,       Boolean
       field :position,        Integer
     end
   end

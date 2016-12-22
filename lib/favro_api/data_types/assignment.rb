@@ -1,8 +1,8 @@
+require_relative './base'
+
 module FavroApi
   module DataTypes
-    class Assignment
-      extend Fields
-      extend Parser
+    class Assignment < ComplexType
 
       field :userId,    String
       field :completed, Boolean

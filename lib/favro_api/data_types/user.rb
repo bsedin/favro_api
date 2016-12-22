@@ -1,8 +1,8 @@
+require_relative './base'
+
 module FavroApi
   module DataTypes
-    class User
-      extend Fields
-      extend Parser
+    class User < ComplexType
 
       field :userId,            String
       field :name,              String

@@ -2,11 +2,13 @@ require_relative './base'
 
 module FavroApi
   module DataTypes
-    class Organization < ComplexType
+    class Tasklist < ComplexType
 
+      field :taskListId,      String
+      field :cardCommonId,    String
       field :organizationId,  String
       field :name,            String
-      field :sharedToUsers,   Array[SharedToUser]
+      field :position,        Integer
     end
   end
 end

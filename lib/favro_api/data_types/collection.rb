@@ -1,9 +1,8 @@
+require_relative './base'
+
 module FavroApi
   module DataTypes
-    class Collection
-      extend Fields
-      extend Parser
-
+    class Collection < ComplexType
       field :collectionId,           String
       field :organizationId,         String
       field :name,                   String

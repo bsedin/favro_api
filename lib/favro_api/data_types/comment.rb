@@ -1,9 +1,8 @@
+require_relative './base'
+
 module FavroApi
   module DataTypes
-    class Comment
-      extend Fields
-      extend Parser
-
+    class Comment < ComplexType
       field :commentId,       String
       field :organizationId,  String
       field :cardCommonId,    String

@@ -1,8 +1,8 @@
+require_relative './base'
+
 module FavroApi
   module DataTypes
-    class SharedToUser
-      extend Fields
-      extend Parser
+    class SharedToUser < ComplexType
 
       field :userId,    String
       field :role,      String

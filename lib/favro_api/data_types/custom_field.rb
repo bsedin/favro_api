@@ -1,8 +1,8 @@
+require_relative './base'
+
 module FavroApi
   module DataTypes
-    class CustomField
-      extend Fields
-      extend Parser
+    class CustomField < ComplexType
 
       field :customFieldId, String
       field :total, Integer

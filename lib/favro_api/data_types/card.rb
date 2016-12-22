@@ -1,8 +1,8 @@
+require_relative './base'
+
 module FavroApi
   module DataTypes
-    class Card
-      extend Fields
-      extend Parser
+    class Card < ComplexType
 
       field :cardId,         String
       field :cardCommonId,   String
