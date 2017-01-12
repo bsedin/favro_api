@@ -51,6 +51,12 @@ module FavroApi
       response.parse(type: FavroApi::DataTypes::User)
     end
 
+    def widgets(params = {})
+      response = paginated_request(:widgets, params).fetch
+
+      response.parse(type: FavroApi::DataTypes::Widget)
+    end
+
     private
 
     def paginated_request(endpoint, params)

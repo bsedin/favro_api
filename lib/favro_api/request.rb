@@ -13,7 +13,8 @@ module FavroApi
       organizations:  '/organizations',
       tasks:          '/tasks',
       tasklists:      '/tasklists',
-      users:          '/users'
+      users:          '/users',
+      widgets:        '/widgets'
     }.freeze
 
     attr_accessor :connection, :url, :endpoint, :params, :method,
